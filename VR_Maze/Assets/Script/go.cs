@@ -6,6 +6,8 @@ public class go : MonoBehaviour {
 
     float sp = 2f;
     float rotsp = 1.0f;
+    Collider col;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -34,5 +36,6 @@ public class go : MonoBehaviour {
         {
             transform.Translate(Vector3.forward * sp * Time.deltaTime);
         }
+
     }
 }

@@ -12,7 +12,7 @@ public class Tcount : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Time.timeScale = 1f;
-        timeCount = 15;
+        timeCount = 30;
 		
 	}
 	
@@ -29,6 +29,7 @@ public class Tcount : MonoBehaviour {
 
     void exit()
     {
+        Debug.Log("Game Over");
         Time.timeScale = 0;
         cv.gameObject.SetActive(true);
         
