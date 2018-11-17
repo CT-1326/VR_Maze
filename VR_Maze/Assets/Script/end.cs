@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class end : MonoBehaviour {
+public class End : MonoBehaviour {
 
     public Canvas cv;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +30,7 @@ public class end : MonoBehaviour {
         {
             Debug.Log("eat!");
             Destroy(col.gameObject);
+            Tcount.timeCount += 2;
         }
 
 

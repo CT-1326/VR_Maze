@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class Tcount : MonoBehaviour {
 
     public Text timeLabel;
-    public float timeCount;
+    public static float timeCount;
     public Canvas cv;
 
 	// Use this for initialization
 	void Start () {
+
         Time.timeScale = 1f;
-        timeCount = 30;
+        timeCount = 15;
 		
 	}
 	
