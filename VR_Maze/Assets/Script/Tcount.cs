@@ -24,6 +24,7 @@ public class Tcount : MonoBehaviour {
             timeCount -= Time.deltaTime;
         else if (timeCount < 0)
             exit();
+        
         timeLabel.text = string.Format("{0:N0}", timeCount);
 
     }

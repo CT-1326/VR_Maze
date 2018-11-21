@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class End : MonoBehaviour {
+public class Eat : MonoBehaviour {
 
     public Canvas cv;
     
