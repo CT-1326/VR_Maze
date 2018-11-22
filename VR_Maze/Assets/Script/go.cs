@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class go : MonoBehaviour {
 
-    float sp = 2f;
+    float sp = 1f;
     float rotsp = 1.0f;
     Collider col;
 
@@ -20,7 +20,7 @@ public class go : MonoBehaviour {
         if (Input.GetKey(KeyCode.DownArrow))
         {
             //transform.Translate(Vector3.back * sp * Time.deltaTime);
-            this.transform.localScale = new Vector3(0.3f,0.3f,0.3f);
+            this.transform.localScale = new Vector3(0.3f,0.5f,0.3f);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
