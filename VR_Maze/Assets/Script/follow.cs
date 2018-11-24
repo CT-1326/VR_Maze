@@ -5,8 +5,7 @@ using UnityEngine;
 public class follow : MonoBehaviour {
 
     public Transform player;
-    public float dist = 1f;
-    public float height = 300.0f;
+    public float dist;
     public float smoothRotate = 5.0f;
     private Transform tr;
 
@@ -25,5 +24,6 @@ public class follow : MonoBehaviour {
 
 
         tr.LookAt(player);
+        
 	}
 }

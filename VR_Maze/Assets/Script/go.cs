@@ -5,22 +5,23 @@ using UnityEngine;
 public class go : MonoBehaviour {
 
     float sp = 1f;
-    float rotsp = 1.0f;
-    Collider col;
+    private Transform tr;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+    // Use this for initialization
+    void Start () {
+        tr = Camera.main.GetComponent<Transform>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
         this.transform.localScale = new Vector3(0.3f, 1f, 0.3f);
+
         if (Input.GetKey(KeyCode.DownArrow))
         {
             //transform.Translate(Vector3.back * sp * Time.deltaTime);
-            this.transform.localScale = new Vector3(0.3f,0.5f,0.3f);
+            this.transform.localScale = new Vector3(0.3f, 0.5f, 0.3f);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -35,6 +36,19 @@ public class go : MonoBehaviour {
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.Translate(Vector3.forward * sp * Time.deltaTime);
+        }
+
+        if (OVRInput.Get(OVRInput.Button.PrimaryTouchpad))
+        {
+            this.transform.localScale = new Vector3(0.3f,0.5f,0.3f);
+        }
+   
+        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
+        {
+            Vector3 vec = tr.TransformDirection(Vector3.forward);
+
+            this.transform.Translate(vec * sp * Time.deltaTime);
+            
         }
 
     }
