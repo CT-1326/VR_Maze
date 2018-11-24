@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class go : MonoBehaviour {
 
-    float sp = 1f;
+    float sp = 2f;
     private Transform tr;
 
 
