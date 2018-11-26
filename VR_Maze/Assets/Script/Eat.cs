@@ -30,7 +30,7 @@ public class Eat : MonoBehaviour {
         {
             Debug.Log("eat!");
             Destroy(col.gameObject);
-            Tcount.timeCount += 2;
+            Tcount.timeCount += 5;
         }
 
 

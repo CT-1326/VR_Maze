@@ -38,6 +38,9 @@ public class go : MonoBehaviour {
             transform.Translate(Vector3.forward * sp * Time.deltaTime);
         }
 
+
+
+
         if (OVRInput.Get(OVRInput.Button.PrimaryTouchpad))
         {
             this.transform.localScale = new Vector3(0.3f,0.5f,0.3f);
