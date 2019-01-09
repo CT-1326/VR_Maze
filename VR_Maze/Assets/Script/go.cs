@@ -18,10 +18,9 @@ public class go : MonoBehaviour {
     {
         this.transform.localScale = new Vector3(0.3f, 1f, 0.3f);
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            //transform.Translate(Vector3.back * sp * Time.deltaTime);
-            this.transform.localScale = new Vector3(0.3f, 0.5f, 0.3f);
+            transform.Translate(Vector3.forward * sp * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -33,10 +32,11 @@ public class go : MonoBehaviour {
             transform.Translate(Vector2.right * sp * Time.deltaTime);
             this.transform.Rotate(0.0f, 90.0f * Time.deltaTime * 2, 0.0f);
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.C))
         {
-            transform.Translate(Vector3.forward * sp * Time.deltaTime);
+            this.transform.localScale = new Vector3(0.3f, 0.5f, 0.3f);
         }
+
 
 
 
