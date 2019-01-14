@@ -15,14 +15,12 @@ public class follow : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void LateUpdate () {
+	void Update () {
 
         float currYAngle = Mathf.LerpAngle(tr.eulerAngles.y, player.eulerAngles.y, smoothRotate * Time.deltaTime);
         Quaternion rot = Quaternion.Euler(0, currYAngle, 0);
         
         tr.position = player.position - (rot * Vector3.forward * dist);
-
-
         tr.LookAt(player);
         
 	}

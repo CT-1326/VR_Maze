@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class go : MonoBehaviour {
 
-    float sp = 3f;
+    float sp = 2f;
     private Transform tr;
 
 
@@ -29,7 +29,7 @@ public class go : MonoBehaviour {
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector2.right * sp * Time.deltaTime);
+            transform.Translate(Vector3.right * sp * Time.deltaTime);
             this.transform.Rotate(0.0f, 90.0f * Time.deltaTime * 2, 0.0f);
         }
         if (Input.GetKey(KeyCode.C))
