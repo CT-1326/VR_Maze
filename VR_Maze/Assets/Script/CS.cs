@@ -5,7 +5,7 @@ using UnityEngine;
 public class CS : MonoBehaviour
 {
 
-    public float rotSpd = 15.0f;
+    public float rotSpd = 150f;
 
     void Start()
     {
@@ -14,7 +14,7 @@ public class CS : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up * Time.deltaTime * rotSpd);
+        transform.Rotate(Vector3.up * rotSpd * Time.deltaTime);
     }
 
 }
