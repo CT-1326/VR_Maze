@@ -5,10 +5,10 @@ Unity 2018.3
 
 Gear VR with controller
 
-Android device
+Android API 19 or higher
 
 # Screenshots
-<img src="https://user-images.githubusercontent.com/33346331/53430414-cbe37200-3a31-11e9-8df4-5ed8eb96ece4.png"/>
+<img src="https://user-images.githubusercontent.com/33346331/53643313-17d32880-3c77-11e9-94cd-13fea73c87a1.png"/>
 
 # SDK
 https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022
