@@ -28,4 +28,4 @@ https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022
     
     Oculus SDK
 # License
-    This project is licensed under the MIT License - see the [VR_Maze/LICENSE](LICENSE)
+This project is licensed under the MIT License - see the [VR_Maze/LICENSE](LICENSE)
